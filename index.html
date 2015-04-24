@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf8">
+<meta name="description" content="김현영의 프로필 페이지입니다.">
     <title>김현영 홈페이지 입니다</title>
     <script src="./main.js"></script>
+	<style>
+		*{margin:0px;padding:0px;}
+		#myphoto{
+			width:980px;
+			background-color:#888888;
+			border:1px solid #eeeeee;
+			margin:20px auto 0px auto;
+			text-align:center;
+		}
+			#myphoto > img{
+				width:640px;height:640px;
+				border-top:4px solid #cc33db;
+				border-left:4px dotted #cc33db;
+				border-right:4px dashed #990099;
+				border-bottom:4px solid #990099;
+			}
+		
+		#myinfo{
+			border-bottom: 10px solid #ff0000;
+			font-size:1.5em;
+			text-align : left;
+		}
+		#myinfo ul{
+		list-style:square;
+		margin-left:150px;
+		}
+		#myinfo > ul> li>span.label{
+			text-decoration: underline;
+		
+		}
+		#myinfo > ul> li>span..content{
+			font-weight : bold;
+		}
+	</style>
 </head>
 <body>
-	<h1>
-	Hello, world !!
-	</h1>
+<div id="myphoto">
+	<img src=".//images/myfsa.jpg" style="width:640px;height:640px;" alt="wow kawai" title="cute">
+</div>
+<div id="myinfo">
+	<ul>
+		<li><span class="lavel">이름</span><span class="content">김현영</span></li>
+		<li><span class="lavel">이메일</span> <span class="content">khy3908@naver.com</span></li>
+		<li><span class="lavel">취미</span> <span class="content">게임만들기ㅋㅋㅋ</span></li>
+		<li><span class="lavel">페이스북</span> <span class="content">beatrice.gompang</span></li>
+	</ul>
+</div>
 </body>
 </html>
